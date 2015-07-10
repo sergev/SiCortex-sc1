@@ -1,0 +1,2068 @@
+;
+; SC1 regression tests
+;
+load c:\temp\alltests\add__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addi__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addiu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\and__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\andi__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bdsexc__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\beq__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\beql__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bne__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bnel__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgez__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezl__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezal__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezall__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgtz__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgtzl__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\blez__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\blezl__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltz__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzl__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzal__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzall__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\break__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\clo__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\clz__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\div__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\divu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\j__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jal__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jr__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jalr__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lb__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lbu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lh__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lhu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lo__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lui__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lw__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ll__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lw_dlyslt__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwl__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwr__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwl_lwr__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\madd__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\maddu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\msub__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\msubu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movn__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movz__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mul__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mult__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\multu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\nor__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\or__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ori__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ri__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sub__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\subu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\xor__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\xori__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sll__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sllv__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srl__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srlv__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sra__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srav__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\slt__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\slti__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sltu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sltiu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sb__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sh__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sw__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sc__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\swl__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\swr__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\syscall__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\teq__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\teqi__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tne__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tnei__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tge__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgei__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgeu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgeiu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlt__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlti__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tltu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tltiu__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\add__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addi__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addiu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dadd__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\daddi__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\daddu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\daddiu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\and__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\andi__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bdsexc__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\beq__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\beql__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bne__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bnel__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgez__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezl__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezal__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezall__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgtz__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgtzl__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\blez__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\blezl__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltz__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzl__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzal__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzall__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\break__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\clo__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\clz__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\div__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\divu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dclo__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dclz__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ddiv__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ddivu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\j__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jal__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jr__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jalr__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lb__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lbu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lh__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lhu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lo__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lui__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lw__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ll__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lw_dlyslt__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwl__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwr__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwl_lwr__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ld__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lld__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ldl__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ldr__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\madd__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\maddu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\msub__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\msubu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movn__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movz__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mul__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mult__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\multu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dmult__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dmultu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\nor__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\or__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ori__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ri__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sub__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\subu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsub__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsubu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\xor__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\xori__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sll__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sllv__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srl__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srlv__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sra__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srav__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsll__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsll32__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsllv__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsrl__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsrl32__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsrlv__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsra__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsra32__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsrav__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\slt__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\slti__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sltu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sltiu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sb__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sh__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sw__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sc__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\swl__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\swr__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\syscall__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sd__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\scd__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sdl__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sdr__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\teq__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\teqi__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tne__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tnei__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tge__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgei__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgeu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgeiu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlt__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlti__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tltu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tltiu__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\add__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addi__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addiu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dadd__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\daddi__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\daddu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\daddiu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\and__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\andi__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bdsexc__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\beq__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\beql__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bne__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bnel__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgez__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezl__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezal__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezall__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgtz__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgtzl__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\blez__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\blezl__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltz__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzl__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzal__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzall__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\break__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\clo__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\clz__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\div__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\divu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dclo__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dclz__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ddiv__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ddivu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\j__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jal__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jr__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jalr__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lb__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lbu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lh__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lhu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lo__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lui__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lw__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ll__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lw_dlyslt__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwl__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwr__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwl_lwr__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ld__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lld__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ldl__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ldr__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\madd__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\maddu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\msub__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\msubu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movn__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movz__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mul__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mult__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\multu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dmult__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dmultu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\nor__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\or__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ori__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ri__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sub__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\subu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsub__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsubu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\xor__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\xori__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sll__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sllv__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srl__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srlv__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sra__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srav__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsll__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsll32__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsllv__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsrl__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsrl32__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsrlv__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsra__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsra32__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\dsrav__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\slt__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\slti__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sltu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sltiu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sb__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sh__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sw__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sc__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\swl__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\swr__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\syscall__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sd__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\scd__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sdl__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sdr__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\teq__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\teqi__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tne__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tnei__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tge__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgei__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgeu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgeiu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlt__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlti__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tltu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tltiu__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\add__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addi__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\addiu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\and__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\andi__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bdsexc__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\beq__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\beql__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bne__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bnel__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgez__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezl__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezal__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgezall__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgtz__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bgtzl__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\blez__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\blezl__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltz__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzl__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzal__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bltzall__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\break__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\clo__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\clz__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\div__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\divu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lb__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lbu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lh__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lhu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lui__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lw__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ll__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwl__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwr__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwl_lwr__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\madd__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\maddu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\msub__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\msubu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movn__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movz__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mul__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mult__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\multu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\nor__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\or__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ori__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ri__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sub__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\subu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\xor__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\xori__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sll__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sllv__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srl__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srlv__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sra__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\srav__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\slt__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\slti__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sltu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sltiu__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sb__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sh__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sw__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sc__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\swl__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\swr__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\syscall__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\teq__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\teqi__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tne__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tnei__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tge__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgei__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgeu__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tgeiu__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlt__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlti__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tltu__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tltiu__EL-m32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bev_exc__EL-M32-K-FM__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bev_exc__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\br_bound__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\br_bound__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\epc_exc__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\eret__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\inv_addr__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\j_bound__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\j_bound__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jal_bound__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\jal_bound__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\kaddr_user_exp__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\load_bound__EL-M32-S__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\load_bound__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\load_bound__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\reg_load_store__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\valid_addr__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlb_attr__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlb_full__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlb_miss__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\tlb_wire__EL-M64-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\abs.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\abs.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\neg.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\neg.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\cvt.s.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\cvt.d.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\cvt.s.w__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\cvt.d.w__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.f.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.f.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.un.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.un.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.eq.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.eq.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ueq.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ueq.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.olt.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.olt.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ult.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ult.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ole.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ole.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ule.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ule.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.sf.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.sf.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ngle.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ngle.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.seq.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.seq.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ngl.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ngl.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.lt.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.lt.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.nge.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.nge.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.le.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.le.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ngt.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\c.ngt.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\add.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\add.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sub.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sub.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mul.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mul.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\div.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\div.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sqrt.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sqrt.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movf.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movf.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movt.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movt.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movn.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movn.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movz.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\movz.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bc1f__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bc1fl__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bc1t__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\bc1tl__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ctcfc1__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ctc1_exc__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\cvt.w.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\cvt.w.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\trunc.w.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\trunc.w.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\floor.w.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\floor.w.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ceil.w.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ceil.w.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\round.w.s__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\round.w.d__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwc1__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ldc1__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\swc1__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\sdc1__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\lwc1__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mtmfc1__EL-M32-U__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\mtc064__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ll_eret_sc__EL-M64-K__test.hex
+run 1fc00000
+assert mem stop =6
+;
+load c:\temp\alltests\ri__EL-M32-U-SYSAD__test.hex
+run 1fc00000
+assert mem stop =6
+;
+echo Regression suite passed

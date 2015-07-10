@@ -1,0 +1,320 @@
+To:	Users
+From:	Bob Supnik
+Subj:	SC1 Simulator Usage
+Date:	20-Jan-2006
+
+			COPYRIGHT NOTICE
+
+The following copyright notice applies to both the SIMH source and binary:
+
+   Original code published in 1993-2006, written by Robert M Supnik
+   Copyright (c) 1993-2005, Robert M Supnik
+
+   Permission is hereby granted, free of charge, to any person obtaining a
+   copy of this software and associated documentation files (the "Software"),
+   to deal in the Software without restriction, including without limitation
+   the rights to use, copy, modify, merge, publish, distribute, sublicense,
+   and/or sell copies of the Software, and to permit persons to whom the
+   Software is furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+   ROBERT M SUPNIK BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+   IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+   Except as contained in this notice, the name of Robert M Supnik shall not
+   be used in advertising or otherwise to promote the sale, use or other dealings
+   in this Software without prior written authorization from Robert M Supnik.
+
+This memorandum documents the SC1 simulator.
+
+
+1. Simulator Files
+
+To compile the SC1, you must define USE_INT64 and USE_ADDR64 as part of
+the compilation command line.
+
+2. SC1 Features
+
+The SC1 simulator is configured as follows:
+
+device		simulates
+name(s)
+
+CPU0..n		CPU cores
+CAC		cache controller
+MEM		memory
+UART		serial console
+I2C		I2C controller to read DIMM serial presense detect EEPROM
+ROM		boot ROM
+ETH		Ethernet controller
+DISK		disk controller
+
+Note that the Ethernet (ETH) is Linux-only.  CPU cores 1 .. 5 can be enabled
+or disabled and are disabled by default.
+
+The SC1 simulator implements several unique stop conditions:
+
+	- TEST FAIL instruction issued
+	- TEST PASS instruction issued
+
+The SC1 supports the Mips regression suite "hex" format, as well as
+simple binary byte streams, for loading memory.
+
+The SC1 does NOT implement the following 5KF features:
+
+	- big-endian operation
+	- reverse-endian user-mode operation
+	- debug mode
+	- caches (memory is coherent)
+
+2.1 CPU Cores (CPU0, CPU1, CPU2, CPU3, CPU4, CPU5).
+
+The SC1 implements six Mips 5KF cores, little-endian only.  Cores 1..5
+can be enabled or disabled and are initially disabled.
+
+Each core includes a full complement of architectural registers and a
+translation lookaside buffer (TLB):
+
+	name		size	comments
+
+	PC		64	program counter
+	DELAY_PC	64	delayed jump or branch address
+	R0..R31		64	R0..R31
+	F0..F31		64	F0..F31
+	MLO		64	LO
+	MHI		64	HI
+	CTXT		64	coprocessor 0 context register
+	XCTXT		64	coprocessor 0 extended context register
+	BADVA		64	coprocessor 0 bad VA register
+	EPC		64	coprocessor 0 exception PC register
+	DEPC		64	coprocessor 0 debug PC register
+	ERRPC		64	coprocessor 0 error PC register
+	IMTLB_TAG	64	instruction mini-TLB tag
+	IMTLB_PFN	64	instruction mini-TLB PFN
+	IMTLB_FL	8	instruction mini-TLB flags
+	IMTLB_TAG	64	data mini-TLB tag
+	DMTLB_PFN	64	data mini-TLB PFN
+	DMTLB_FL	8	data mini-TLB flags
+	TLBI		32	coprocessor 0 TLB index register
+	TLBR		6	coprocessor 0 TLB random register
+	WIRED		6	coprocessor 0 TLB wired register
+	ENTLO0		32	coprocessor 0 entry low 0 register
+	ENTLO1		32	coprocessor 0 entry low 1 register
+	ENTHI		64	coprocessor 0 entry hi register
+	MASK		32	coprocessor 0 mask register
+	COUNT		32	coprocessor 0 count register
+	COMPARE		32	coprocessor 0 compare register
+	SR		32	coprocessor 0 status register
+	CAUSE		32	coprocessor 0 cause register
+	CONFIG		32	coprocessor 0 configuration register
+	WATCHLO		64	coprocessor 0 watch low register
+	WATCHHI		32	coprocessor 0 watch high register
+	DEBUG		32	coprocessor 0 debug control register
+	PERF[0..3]	32	coprocessor 0 performance counters
+	ERRCTL		32	coprocessor 0 error control register
+	CCHERR		32	coprocessor 0 cache error register
+	DATLO		64	coprocessor 0 cache data low register
+	DATHI		64	coprocessor 0 cache data high register
+	TAGLO		32	coprocessor 0 cache tag low register
+	DESAVE		64	coprocessor 0 debug save register
+	FPCR		32	floating point control register
+	DELAY		2	delayed jump or branch counter
+	TAKEN		1	jump or branch taken flag
+	NULLIFY		1	instruction nullify flag
+	TRAPS		32	pending traps register
+	EVENTS		8	pending events register
+	ICR[12]		16	interrupt control registers 0..11
+	SLOW_MASK	16	mask for slow (polled) interrupts
+	TLB[0..239]	64	TLB entries 0..47, five words per entry
+	PCQ[0:63]	64	PC prior to last PC change or interrupt;
+				most recent PC change first
+
+Each core can maintain a history of the most recently executed instructions.
+This is controlled by the SET CPUn HISTORY and SHOW CPUn HISTORY commands:
+
+	SET CPUn HISTORY	clear history buffer
+	SET CPUn HISTORY=0	disable history
+	SET CPUn HISTORY=n	enable history, length = n
+	SHOW CPUn HISTORY	print CPUn history
+	SHOW CPUn HISTORY=m	print first m entries of CPUn history
+
+The maximum length for the history is 2^18 entries.
+
+Each core can trace execution of instructions and log them to the DEBUG
+stream (see the SimH SET CONSOLE DEBUG command):
+
+	SET CPUn DEBUG=TRACE	enable tracing
+	SET CPUn NODEBUG=TRACE	disable tracing
+
+Special instructions TRACE_ON and TRACE_OFF enable and disable tracing from
+within an executing program.  History and tracing are independent facilities.
+
+Each core also implements a command to display a virtual to physical address
+translation:
+
+	SHOW CPUn VIRTUAL=m	show CPUn translation for virtual address m
+
+and a command to display the core's TLB:
+
+	SHOW CPUn TLB		show CPUn TLB, all entries
+	SHOW CPUn TLB=j		show CPUn TLB, entry j
+	SHOW CPUn TLB=j-k	show CPUn TLB, entries j..k
+
+2.2 Cache Controller (CAC)
+
+The cache controller implements the processor core extensions for L2 caching
+and system interrupts.  There is one register:
+
+	name		size	comments
+
+	SLOW_INT	8	slow (polled) interrupt requests
+
+2.3 Memory (MEM)
+
+MEM options include the size of main memory:
+
+	SET MEM 16M		set memory size = 16MB
+	SET MEM 32M		set memory size = 32MB
+	SET MEM 64M		set memory size = 64MB
+	SET MEM 128M		set memory size = 128MB
+	SET MEM 256M		set memory size = 256MB
+	SET MEM 512M		set memory size = 512MB
+	SET MEM 1G		set memory size = 1024MB
+	SET MEM 2G		set memory size = 2048MB
+
+Initial memory size is 64MB.
+
+Memory implements the following registers:
+
+	name		size	comments
+
+	INT_REQ		16	global interrupt requests
+	LOCK_FLAGS	6	per-core lock flags, bit<0> = core 0, etc
+	LOCK_ADDR[0..5]	64	per-core lock addresses
+	STOP		16	most recent stop code (for ASSERT command)
+	WRU		8	simulator stop character (defaults to ^E)
+
+Memory can be loaded with a binary byte stream using the LOAD command.
+The LOAD command recognizes three switches:
+
+	-o			origin argument follows file name
+	-h			load file is Mips "hex" format
+	-e			load file is ELF format
+
+These switches are recognized when examining or depositing in CPU memory
+(or any other byte oriented device):
+
+	-b			examine/deposit bytes
+	-h			examine/deposit halfwords
+	-w			examine/deposit words
+	-d			examine/deposit doublewords
+	-t			data radix is decimal (tens)
+	-o			data radix is octal
+	-s			data radix is hexadecimal (sixteens)
+
+These switches are recognized when examining or depositing in memory only:
+
+	-m			examine (only) instructions
+
+Examines and deposits via the CPU cores are always virtual; via MEM are
+always physical.
+
+2.4 ROM
+
+Memory configurations smaller than 256MB implement a 128KB boot ROM at the standard Mips
+boot address 1FC00000.  There are no registers.
+
+2.5 Serial Console (UART)
+
+The serial console is a 16550 UART  It consists of two units:
+
+	UART0			input
+	UART1			output
+
+It has the following registers:
+
+	name		size	comments
+
+	LCTL		8	line control register
+	LSTA		8	line status register
+	MCTL		8	modem control register
+	MSTA		8	modem status register
+	IE		8	interrupt enable register
+	ISTA		8	interrupt status register
+	IID		8	most recent interrupt ID
+	FCTL		8	FIFO control register
+	RFIFO[0:15]	8	receive FIFO
+	XFIFO[0:15]	8	transmit FIFO
+	RIP		4	receive FIFO input pointer
+	RRP		4	receive FIFO remove pointer
+	RCNT		5	receive FIFO character count
+	XIP		4	transmit FIFO input pointer
+	XRP		4	transmit FIFO remove pointer
+	XCNT		5	transmit FIFO character count
+	XBUF		8	transmit buffer
+	RALARM		4	receive alarm threshold
+	RPOS		64	number of characters received
+	RTIME		24	interval between input polls
+	XPOS		64	number of characters transmitted
+	XTIME		24	interval between character transmissions
+	FTIME		24	interval between character insertions
+				in the transmit FIFO
+
+2.6 Serial Bus Controller (I2C)
+
+The serial bus controller is an I2C controller for reading (and writing) the serial presence
+detect EEPROMs in the system DIMMs.  The I2C controller has two units, representing the
+EEPROMs on each DIMM.  The EEPROMs have a fixed size of 256 bytes.  Each EEPROM is simulated
+as an in-memory array.  Alternately, the EEPROM units can be attached to a file.
+
+The I2C controller implements one option:
+
+	SET I2Cn SWP		set EEPROM write protected (first 128 bytes read only)
+	SET I2Cn NOSWP		set EEPROM writeable
+
+It has the following registers:
+
+	name		size	comments
+
+	MODE		3	I2C controller state
+	PRESCH		8	prescaler high value
+	PRESCL		8	prescaler low value
+	CTL		8	control register
+	RCV		8	receive buffer
+	XMT		8	transmit buffer
+	STA		8	status register
+	CMD		8	command register
+	SLVSEL		8	current slave select
+	AP[0:1]		8	current address pointer, units 0 and 1
+	TIME		24	polling delay after read or write
+
+2.6 Symbolic Display and Input
+
+The SC1 simulator implements symbolic display and input.  Display is
+controlled by command line switches:
+
+	-a			display byte as ASCII data
+	-b			display byte
+	-h			display halfword
+	-w			display word
+	-c			display doubleword as ASCII data
+	-m			display instruction mnemonics
+
+Input parsing is controlled by the first character typed in or by command
+line switches:
+
+	' or -a			one byte as ASCII character
+	-b			one byte, hex number
+	-h			one halfword, hex number
+	-w			one word, hex number
+	" or -c			one doubleword as ASCII data
+	alphabetic		instruction mnemonic
+	numeric			one doubleword, hex number
+
+Mips instruction input uses standard Mips assembler syntax.
